@@ -1,30 +1,69 @@
-.top-nav{
-  height:70px;
-  background-color:#487eb0;
+.top-nav {
+  height: 70px;
+  background-color: #487eb0;
   color: white;
   text-align: center;
 }
-.top-nav .nav .nav-link{
-  color:white;
-  padding-top:23px;
+
+.top-nav .nav .nav-link {
+  color: white;
+  padding-top: 23px;
 }
+
 .top-img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: 680px;
 }
-.top-img .top-items{
+
+.top-img .top-items {
   position: relative;
-  top: 250px;
-  right:300px;
+  top: 0px;
+  right: 300px;
 }
-.top-img .top-items h3{
+
+.top-img .top-items h3 {
   font-size: 4em;
   font-weight: bold;
 }
-.top-img .top-items p{
+
+.top-img .top-items p {
   text-transform: capitalize;
   font-size: 20px;
   font-style: italic;
   margin: 20px 0;
+}
+
+.chef {
+  /* background: rgba(0, 0, 0, 0.5); */
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chef .chef-img {
+  width: 500px;
+}
+
+.chef .chef-quote {
+  width: 500px;
+}
+
+.chef .chef-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.chef .chef-img .details {
+  width: 300px
+}
+
+.chef .chef-img2 {
+  margin-right: 20px;
+  height: 200px;
+  width: 200px;
+  background: #487eb0;
+  border-radius: 50%;
 }
