@@ -47,13 +47,16 @@
   width: 500px;
 }
 
-.chef .chef-quote {
-  width: 500px;
+.chef .chefs-quote {
+  width: 400px;
 }
-
+.chef .chef-quote p{
+  max-width: 10px;
+}
 .chef .chef-img {
   display: flex;
   justify-content: space-around;
+  width: auto;
 }
 
 .chef .chef-img .details {
@@ -66,4 +69,18 @@
   width: 200px;
   background: #487eb0;
   border-radius: 50%;
+}
+.pizza1{
+  height: 240px;
+  width: 200px;
+  background-color: #fbc531;
+}
+.pizza-1-txt{
+  width: 240px;
+  padding:0px  10px;
+  border: 5px solid yellow;
+  border-width:0 0 0 5px;
+}
+.col-md-4{
+  display: flex;
 }
