@@ -8,3 +8,23 @@
   color:white;
   padding-top:23px;
 }
+.top-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top-img .top-items{
+  position: relative;
+  top: 250px;
+  right:300px;
+}
+.top-img .top-items h3{
+  font-size: 4em;
+  font-weight: bold;
+}
+.top-img .top-items p{
+  text-transform: capitalize;
+  font-size: 20px;
+  font-style: italic;
+  margin: 20px 0;
+}
