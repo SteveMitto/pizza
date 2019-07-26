@@ -1,0 +1,10 @@
+.top-nav{
+  height:70px;
+  background-color:#487eb0;
+  color: white;
+  text-align: center;
+}
+.top-nav .nav .nav-link{
+  color:white;
+  padding-top:23px;
+}
