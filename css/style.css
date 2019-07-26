@@ -81,6 +81,35 @@
   border: 5px solid yellow;
   border-width:0 0 0 5px;
 }
-.col-md-4{
+.pizza-types{
+  background-color: rgba(0,0,0,.02);
+  text-align:center;
+}
+.piza{
   display: flex;
 }
+.size1{
+  width: 200px
+}
+.size2{
+  width: 150px;
+  margin:20px 0;
+}
+.size3{
+  margin:40px 0;
+  width: 100px;
+}
+.pizza-types .col-md-4{
+  d
+}
+#target1{
+  padding: 20px;
+  text-align: left;
+  height: auto;
+}
+#target1 h6{
+  padding: 10px
+  background-color: rgba(0,0,0,.02);
+}
+#target1 label{
+  padding:0 10px;

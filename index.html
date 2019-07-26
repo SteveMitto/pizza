@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/script.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
   <div class="container-fluid top-nav">
@@ -65,7 +66,7 @@
       <h5>Pizza Types</h5>
 
         <div class=" row pizza-r">
-          <div class="col-md-4">
+          <div class="col-md-4 piza">
             <div class="pizza1">
 
             </div>
@@ -75,7 +76,7 @@
               <button type="button" class="btn btn-warning" name="button">Oder</button> <span class="price price1">1200ksh</span>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 piza">
             <div class="pizza1">
 
             </div>
@@ -85,7 +86,7 @@
               <button type="button" class="btn btn-warning" name="button">Oder</button> <span class="price price2">1200ksh</span>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 piza">
             <div class="pizza1">
 
             </div>
@@ -96,7 +97,40 @@
             </div>
           </div>
         </div><br>
+        <!-- pizza row -->
+        <div class="row pizza-types">
+          <div class="col-md-4">
+            <h5>Large</h5>
+            <img  class="pizza-s size1"src="pizza-size.png" alt="">
+          <div class=" card1">
+          </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Medium</h5>
+            <img  class="pizza-s size2"src="pizza-size.png" alt="">
+            <div class="card2">
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <h5>Small</h5>
+            <img  class="pizza-s size3"src="pizza-size.png" alt="">
+            <div class="card3">
+
+            </div>
+          </div>
+        </div>
+
       </div>
       <br>
+      <form class="target-l">
+        <label for="">Cheese</label>
+        <input type="checkbox" name="" value="cheese" id="cheese">
+        <label for="">Peperoni</label>
+        <input type="checkbox" name="" value="peperoni" id="peperoni">
+        <label for="">Ham</label>
+        <input type="checkbox" name="" value="cheese" id="ham">
+      </form>
   </body>
 </html>
