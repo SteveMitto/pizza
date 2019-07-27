@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Pizza Moto</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
     <link rel="icon" icon="image.png" href="pizza.png">
     <link rel="stylesheet" href="css/boot/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +36,7 @@
     </div>
   </div>
   <div class="container-fluid top-img">
-    <div class="top-items">
+    <div class="top-items ">
       <h3> PIZZA IS GOOD</h3>
       <p>Medicine for Disapointment</p>
       <button type="button" class="btn btn-primary" name="button">Order Now <span class="arrow">></span> </button>
@@ -67,43 +68,47 @@
 
         <div class=" row pizza-r">
           <div class="col-md-4 piza">
-            <div class="pizza1">
+            <div class="pizza1 pizza1-pic">
 
             </div>
             <div class="pizza-1-txt">
               <h4>Pizza 1</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-              <button type="button" id="pizza1-btn" class="btn btn-warning" name="button">Oder</button> <span class="price price1">1200ksh</span>
+              <button type="button" id="pizza1-btn" class="btn btn-warning" name="button">Oder</button>
             </div>
           </div>
           <div class="col-md-4 piza">
-            <div class="pizza1">
+            <div class="pizza1 pizza2-pic">
 
             </div>
             <div class="pizza-1-txt">
               <h4>Pizza 2</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-              <button type="button" id="pizza2-btn" class="btn btn-warning" name="button">Oder</button> <span class="price price2">1200ksh</span>
+              <button type="button" id="pizza2-btn" class="btn btn-warning" name="button">Oder</button>
+
             </div>
           </div>
+
           <div class="col-md-4 piza">
-            <div class="pizza1">
+            <div class="pizza1 pizza3-pic">
 
             </div>
             <div class="pizza-1-txt">
               <h4>Pizza 3</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-              <button type="button" id="pizza3-btn" class="btn btn-warning" name="button">Oder</button>  <span class="price price3">1200ksh</span>
+              <button type="button" id="pizza3-btn" class="btn btn-warning" name="button">Oder</button>
             </div>
           </div>
-        </div><br>
+        </div>
+        <br><br>
         <!-- pizza 1 row -->
         <div class="row pizza-types1">
           <div class="col-md-4">
-            <h5>Large</h5>
-            <img  class="pizza-s size1"src="pizza-size.png" alt="">
           <div class=" card1">
+            <span class="finish"></span>
             <form class='target-l'>
+              <h5>Large</h5>
+              <img  class="pizza-s size1"src="pizza-size.png" alt="">
               <h6>Toppings</h6>
               <label for='cheese'>Cheese</label>
               <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -125,10 +130,10 @@
           </div>
           </div>
           <div class="col-md-4">
-            <h5>Medium</h5>
-            <img  class="pizza-s size2"src="pizza-size.png" alt="">
             <div class="card2">
               <form class='target-m'>
+                <h5>Medium</h5>
+                <img  class="pizza-s size2"src="pizza-size.png" alt="">
                 <h6>Toppings</h6>
                 <label for='cheese'>Cheese</label>
                 <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -150,10 +155,10 @@
             </div>
           </div>
           <div class="col-md-4">
-            <h5>Small</h5>
-            <img  class="pizza-s size3"src="pizza-size.png" alt="">
             <div class="card3">
               <form class='target-s'>
+                <h5>Small</h5>
+                <img  class="pizza-s size3"src="pizza-size.png" alt="">
                 <h6>Toppings</h6>
                 <label for='cheese'>Cheese</label>
                 <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -179,10 +184,10 @@
         <!-- pizza 2 row -->
         <div class="row pizza-types2">
           <div class="col-md-4">
-            <h5>Large</h5>
-            <img  class="pizza-s size1"src="pizza-size.png" alt="">
           <div class=" card1">
             <form class='target-l'>
+              <h5>Large</h5>
+              <img  class="pizza-s size1"src="pizza-size.png" alt="">
               <h6>Toppings</h6>
               <label for='cheese'>Cheese</label>
               <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -204,10 +209,10 @@
           </div>
           </div>
           <div class="col-md-4">
-            <h5>Medium</h5>
-            <img  class="pizza-s size2"src="pizza-size.png" alt="">
             <div class="card2">
               <form class='target-m'>
+                <h5>Medium</h5>
+                <img  class="pizza-s size2"src="pizza-size.png" alt="">
                 <h6>Toppings</h6>
                 <label for='cheese'>Cheese</label>
                 <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -229,10 +234,10 @@
             </div>
           </div>
           <div class="col-md-4">
-            <h5>Small</h5>
-            <img  class="pizza-s size3"src="pizza-size.png" alt="">
             <div class="card3">
               <form class='target-s'>
+                <h5>Small</h5>
+                <img  class="pizza-s size3"src="pizza-size.png" alt="">
                 <h6>Toppings</h6>
                 <label for='cheese'>Cheese</label>
                 <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -258,10 +263,10 @@
         <!-- pizza 3 row -->
         <div class="row pizza-types3">
           <div class="col-md-4">
-            <h5>Large</h5>
-            <img  class="pizza-s size1"src="pizza-size.png" alt="">
           <div class=" card1">
             <form class='target-l'>
+              <h5>Large</h5>
+              <img  class="pizza-s size1"src="pizza-size.png" alt="">
               <h6>Toppings</h6>
               <label for='cheese'>Cheese</label>
               <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -283,10 +288,10 @@
           </div>
           </div>
           <div class="col-md-4">
-            <h5>Medium</h5>
-            <img  class="pizza-s size2"src="pizza-size.png" alt="">
             <div class="card2">
               <form class='target-m'>
+                <h5>Medium</h5>
+                <img  class="pizza-s size2"src="pizza-size.png" alt="">
                 <h6>Toppings</h6>
                 <label for='cheese'>Cheese</label>
                 <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -308,10 +313,10 @@
             </div>
           </div>
           <div class="col-md-4">
-            <h5>Small</h5>
-            <img  class="pizza-s size3"src="pizza-size.png" alt="">
             <div class="card3">
               <form class='target-s'>
+                <h5>Small</h5>
+                <img  class="pizza-s size3"src="pizza-size.png" alt="">
                 <h6>Toppings</h6>
                 <label for='cheese'>Cheese</label>
                 <input type='checkbox' name='topping' value='cheese' id='cheese'>
@@ -335,6 +340,15 @@
         </div>
 
       </div>
+
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
       <br>
+
+
   </body>
 </html>
