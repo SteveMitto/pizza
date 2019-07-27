@@ -21,6 +21,7 @@
   position: relative;
   top: 0px;
   right: 300px;
+
 }
 
 .top-img .top-items h3 {
@@ -73,13 +74,12 @@
 .pizza1{
   height: 240px;
   width: 200px;
-  background-color: #fbc531;
+  background-color: #487eb0;
 }
 .pizza-1-txt{
   width: 240px;
   padding:0px  10px;
-  border: 5px solid yellow;
-  border-width:0 0 0 5px;
+
 }
 .pizza-types{
   background-color: rgba(0,0,0,.02);
