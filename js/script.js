@@ -22,6 +22,22 @@ var finalPrice = [];
 $(document).ready(function() {
   console.log("i am ready")
 
+// Cart Functions
+$(".cart").hide();
+$(".cart .close").click(function(){
+  $(".cart").fadeOut(500);
+  $("body").css('overflow','visible')
+  $(".shopping-cart").show(500)
+})
+
+
+$(".shopping-cart").click(function(){
+  $(".cart").fadeIn(500);
+  $("body").css('overflow','hidden')
+  $(".shopping-cart").hide()
+})
+
+//
   $(".pizza-types1,.pizza-types2,.pizza-types3").hide();
 
   $("#pizza1-btn").click(function() {
