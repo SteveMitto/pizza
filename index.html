@@ -7,8 +7,8 @@
   <title>Pizza Moto</title>
   <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
   <link rel="icon" icon="image.png" href="pizza.png">
-  <link rel="stylesheet" href="css/boot/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/boot/css/bootstrap.css">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/script.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,31 +44,39 @@
       <button type="button" class="btn btn-primary" name="button">Order Now <span class="arrow">></span> </button>
     </div>
   </div>
-  <hr>
+<div class="container"><br><br>
+  <h3 id="my-chef">Your Chef</h3><br><br>
+</div>
   <div class="container chef">
     <div class="row">
-
       <div class="col-md-6 chef-img">
         <div class="chef-img2">
 
         </div>
-        <div class="details">
-          <br><br><br>
-          <h6>Name</h6>
-          <p>Chef Type</p>
-        </div>
       </div>
       <div class="col-md-6 chefs-quote">
-        <h3>Did You Know</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+        <br><br>
+        <h3>Martin Newstone</h3>
+        <small> Senior Chef</small>
+        <p>If you are a chef, no matter how good a chef you are, it's not good cooking for yourself; the joy is in cooking for others - it's the same with music...</p><br><br>
       </div>
     </div>
   </div>
-  <hr>
-  <div class="container-fluid">
-    <h5>Pizza Types</h5>
 
+  <div class="container-fluid">
+<br>
+    <div class="row">
+      <div class="col-md-4">
+      <span class="line"></span>
+      </div>
+      <div class="col-md-4">
+        <h3 class="pizza-heading">Pizza Types</h3>
+      </div>
+      <div class="col-md-4">
+      <span class="line"></span>
+      </div>
+    </div>
+<br>
     <div class=" row pizza-r">
       <div class="col-md-4 piza">
         <div class="pizza1 pizza1-pic">
@@ -76,7 +84,7 @@
         </div>
         <div class="pizza-1-txt">
           <h4>Margherita Pizza</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+          <p>Pizza Margherita is a typical Neapolitan pizza, made with SanMarzano tomatoes, mozzarella cheese, fresh basil, salt and extra-virgin olive oil. </p>
           <button type="button" id="pizza1-btn" class="btn btn-warning" name="button">Oder</button>
         </div>
       </div>
@@ -85,8 +93,8 @@
 
         </div>
         <div class="pizza-1-txt">
-          <h4>Pizza 2</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+          <h4>Chicken PeriPeri</h4>
+          <p>his pizza has sliced chicken breast, mozzarella cheese, and a few other complementary toppings, liberally laced with peri peri sauce. </p>
           <button type="button" id="pizza2-btn" class="btn btn-warning" name="button">Oder</button>
 
         </div>
@@ -97,8 +105,8 @@
 
         </div>
         <div class="pizza-1-txt">
-          <h4>Pizza 3</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+          <h4>Hawaiian</h4>
+          <p>Hawaiian pizza is a pizza topped with tomato sauce, cheese, pineapple, and back bacon or ham. Pineapple as a pizza topping divides public opinion: Hawaiian was the most popular pizza in Australia</p>
           <button type="button" id="pizza3-btn" class="btn btn-warning" name="button">Oder</button>
         </div>
       </div>
@@ -139,11 +147,11 @@
             <img class="pizza-s size2" src="pizza-size.png" alt="">
             <h6>Toppings</h6>
             <label for='cheese'>Cheese</label>
-            <input type='checkbox' name='topping' value='cheese' id='cheese'>
+            <input type='checkbox' name='topping' value='cheese' id='cheese-m'>
             <label for='peperoni'>Peperoni</label>
-            <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
+            <input type='checkbox' name='topping' value='peperoni' id='peperoni-m'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham'>
+            <input type='checkbox' name='topping' value='ham' id='ham-m'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
             <input type='radio' name='crust' value='crispy' id='crust'>
@@ -152,7 +160,7 @@
             <label for='crust'>Gluten-free</label>
             <input type='radio' name='crust' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
+            <input type='number' class='form-control amount'><br>
             <button class='btn btn-primary btn-m' type='submit'>Add To Cart</button>
           </form>
         </div>
@@ -176,8 +184,8 @@
             <input type='radio' name='crust' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
             <input type='radio' name='crust' value='gluten-free' id='crust'><br>
-            <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
+            <label for='quant'>Quantinty</label>
+            <input type='number' class='form-control amt' id='quant'><br>
             <button class='btn btn-primary btn-s' type='submit'>Add To Cart</button>
           </form>
         </div>
@@ -188,16 +196,16 @@
     <div class="row pizza-types2">
       <div class="col-md-4">
         <div class=" card1">
-          <form class='target-l'>
+          <form class='target-L'>
             <h5>Large</h5>
             <img class="pizza-s size1" src="pizza-size.png" alt="">
             <h6>Toppings</h6>
             <label for='cheese'>Cheese</label>
-            <input type='checkbox' name='topping' value='cheese' id='cheese'>
+            <input type='checkbox' name='topping' value='cheese' id='cheese-L'>
             <label for='peperoni'>Peperoni</label>
-            <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
+            <input type='checkbox' name='topping' value='peperoni' id='peperoni-L'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham'>
+            <input type='checkbox' name='topping' value='ham' id='ham-L'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
             <input type='radio' name='crust' value='crispy' id='crust'>
@@ -206,23 +214,23 @@
             <label for='crust'>Gluten-free</label>
             <input type='radio' name='crust' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
-            <button class='btn btn-primary' type='submit'>Add To Cart</button>
+            <input type='number' class='form-control quantity-L' id="quantity"><br>
+            <button class='btn btn-primary btn-L' type='submit'>Add To Cart</button>
           </form>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card2">
-          <form class='target-m'>
+          <form class='target-M'>
             <h5>Medium</h5>
             <img class="pizza-s size2" src="pizza-size.png" alt="">
             <h6>Toppings</h6>
             <label for='cheese'>Cheese</label>
-            <input type='checkbox' name='topping' value='cheese' id='cheese'>
+            <input type='checkbox' name='topping' value='cheese' id='cheese-M'>
             <label for='peperoni'>Peperoni</label>
-            <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
+            <input type='checkbox' name='topping' value='peperoni' id='peperoni-M'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham'>
+            <input type='checkbox' name='topping' value='ham' id='ham-M'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
             <input type='radio' name='crust' value='crispy' id='crust'>
@@ -231,14 +239,14 @@
             <label for='crust'>Gluten-free</label>
             <input type='radio' name='crust' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
-            <button class='btn btn-primary' type='submit'>Add To Cart</button>
+            <input type='number' class='form-control amount2'><br>
+            <button class='btn btn-primary btn-M' type='submit'>Add To Cart</button>
           </form>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card3">
-          <form class='target-s'>
+          <form class='target-S'>
             <h5>Small</h5>
             <img class="pizza-s size3" src="pizza-size.png" alt="">
             <h6>Toppings</h6>
@@ -255,9 +263,9 @@
             <input type='radio' name='crust' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
             <input type='radio' name='crust' value='gluten-free' id='crust'><br>
-            <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
-            <button class='btn btn-primary' type='submit'>Add To Cart</button>
+            <label for='quant'>Quantinty</label>
+            <input type='number' class='form-control amt2' id='quant'><br>
+            <button class='btn btn-primary btn-S' type='submit'>Add To Cart</button>
           </form>
         </div>
       </div>
@@ -267,76 +275,76 @@
     <div class="row pizza-types3">
       <div class="col-md-4">
         <div class=" card1">
-          <form class='target-l'>
+          <form class='target-La'>
             <h5>Large</h5>
             <img class="pizza-s size1" src="pizza-size.png" alt="">
             <h6>Toppings</h6>
             <label for='cheese'>Cheese</label>
-            <input type='checkbox' name='topping' value='cheese' id='cheese'>
+            <input type='checkbox' name='topping' value='cheese' id='cheese-La'>
             <label for='peperoni'>Peperoni</label>
-            <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
+            <input type='checkbox' name='topping' value='peperoni' id='peperoni-La'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham'>
+            <input type='checkbox' name='topping' value='ham' id='ham-La'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust-La' value='crispy' id='crust'>
             <label for='crust'>Stuffed</label>
-            <input type='radio' name='crust' value='stuffed' id='crust'>
+            <input type='radio' name='crust-La' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
-            <input type='radio' name='crust' value='gluten-free' id='crust'><br>
+            <input type='radio' name='crust-La' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
-            <button class='btn btn-primary' type='submit'>Add To Cart</button>
+            <input type='number' class='form-control quantity-La' id='quantity'><br>
+            <button class='btn btn-primary btn-La' type='submit'>Add To Cart</button>
           </form>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card2">
-          <form class='target-m'>
+          <form class='target-Me'>
             <h5>Medium</h5>
             <img class="pizza-s size2" src="pizza-size.png" alt="">
             <h6>Toppings</h6>
             <label for='cheese'>Cheese</label>
-            <input type='checkbox' name='topping' value='cheese' id='cheese'>
+            <input type='checkbox' name='topping' value='cheese' id='cheese-Me'>
             <label for='peperoni'>Peperoni</label>
-            <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
+            <input type='checkbox' name='topping' value='peperoni' id='peperoni-Me'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham'>
+            <input type='checkbox' name='topping' value='ham' id='ham-Me'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust-Me' value='crispy' id='crust'>
             <label for='crust'>Stuffed</label>
-            <input type='radio' name='crust' value='stuffed' id='crust'>
+            <input type='radio' name='crust-Me' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
-            <input type='radio' name='crust' value='gluten-free' id='crust'><br>
+            <input type='radio' name='crust-Me' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
-            <button class='btn btn-primary' type='submit'>Add To Cart</button>
+            <input type='number' class='form-control amount3' id='quantity'><br>
+            <button class='btn btn-primary btn-Me' type='submit'>Add To Cart</button>
           </form>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card3">
-          <form class='target-s'>
+          <form class='target-Sm'>
             <h5>Small</h5>
             <img class="pizza-s size3" src="pizza-size.png" alt="">
             <h6>Toppings</h6>
             <label for='cheese'>Cheese</label>
-            <input type='checkbox' name='topping' value='cheese' id='cheese'>
+            <input type='checkbox' name='topping' value='cheese' id='cheese-Sm'>
             <label for='peperoni'>Peperoni</label>
-            <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
+            <input type='checkbox' name='topping' value='peperoni' id='peperoni-Sm'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham'>
+            <input type='checkbox' name='topping' value='ham' id='ham-Sm'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust-Sm' value='crispy' id='crust'>
             <label for='crust'>Stuffed</label>
-            <input type='radio' name='crust' value='stuffed' id='crust'>
+            <input type='radio' name='crust-Sm' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
-            <input type='radio' name='crust' value='gluten-free' id='crust'><br>
+            <input type='radio' name='crust-Sm' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
-            <input type='number' class='form-control' id='quantity'><br>
-            <button class='btn btn-primary' type='submit'>Add To Cart</button>
+            <input type='number' class='form-control amt3' id='quantity'><br>
+            <button class='btn btn-primary btn-Sm' type='submit'>Add To Cart</button>
           </form>
         </div>
       </div>
@@ -362,7 +370,7 @@
         <span class="line"></span>
       </div>
       <div class="col-md-1">
-        <span class="close"> <img src="Close.png" alt="" widht="10px"> </span>
+        <span class="close"> </span>
       </div>
       </div>
       <div class=" container">
@@ -384,8 +392,15 @@
 
         </tbody>
         <br><br>
+        <tfoot>
+          <tr><em>
+            <th>Total </th>
+            <th>20</th>
+            </em>
+          </tr>
+        </tfoot>
       </table>
-    </div>
+      <button type="button" name="button">Delivery</button>
     </div>
     </div>
     </div>
