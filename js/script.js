@@ -143,6 +143,6 @@ $(document).ready(function() {
     var order1 = new Order(pizzaType, crust, price);
     console.log(toppingsIn.selected)
     })
-    
+
     // alert(order1.toppings);
   })

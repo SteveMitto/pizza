@@ -17,11 +17,12 @@ open with Visual Studio Code `code .`
 To develop this site we have used HTML CSS and Jquery.
 
 ##Bugs and errors
-
+The toppings may not display on cart
+and i haven't finished
 
 ## Link to Website
-To view this site open using the link below
-
+To view this site open using the link below <br>
+https://stevemitto.github.io/pizza/
 ## License Information
 MIT License
 
