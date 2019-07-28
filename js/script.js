@@ -22,6 +22,11 @@ var finalPrice = [];
 $(document).ready(function() {
   console.log("i am ready")
 
+$(".order").click(function(){
+ $("body, html").animate({
+   scrollTop: $("#menu").offset().top
+ },1000)
+})
 $(".shopping-cart").hide()
 var pizzaAmount = 0;
 $(".items-added small").text(pizzaAmount)
@@ -380,11 +385,6 @@ $(".shopping-cart").click(function(){
           $(".shopping-cart").show(500)
       }
     })
-
-<<<<<<< HEAD
-    // alert(order1.toppings);
-  })
-=======
   //----------------------Pizza Type 2 Small --------------------//
     $(".pizza-types2 .target-S").submit(function() {
       event.preventDefault();
@@ -653,7 +653,7 @@ $("#checkout").click(function(){
 $(".targetEmail").submit(function(){
   event.preventDefault();
   alert("Thank you "+ $("#names").val()+". Email sent")
-  
+
 })
 
   // var lastPrice =0;
@@ -663,4 +663,3 @@ $(".targetEmail").submit(function(){
 // }
 // console.log("Total "+lastPrice)
 })
->>>>>>> test
