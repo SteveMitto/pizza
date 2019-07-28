@@ -16,23 +16,23 @@
 
 <body>
   <div class="container-fluid top-nav">
-    <div class="row ">
+    <div id="home"class="row ">
       <div class="col-md-4">
         <ul class="nav">
-          <li class="nav-item"> <a href="#" class="nav-link">Home</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link">Menu</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link">Services</a> </li>
+          <li class="nav-item"> <a href="#home" class="nav-link">Home</a> </li>
+          <li class="nav-item"> <a href="#menu" class="nav-link">Menu</a> </li>
+          <!-- <li class="nav-item"> <a href="#" class="nav-link"></a> </li> -->
         </ul>
       </div>
       <div class="col-md-4">
         <br>
-        <h6>Pizza Fuergo</h6>
+        <h6>Pizza Moto</h6>
       </div>
       <div class="col-md-4">
         <ul class="nav">
-          <li class="nav-item"> <a href="#" class="nav-link">Delivery</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link">About Us</a> </li>
-          <li class="nav-item"> <a href="#" class="nav-link">Contact Us</a> </li>
+          <!-- <li class="nav-item"> <a href="#" class="nav-link">Delivery</a> </li> -->
+          <li class="nav-item"> <a href="#my-chef" class="nav-link">About Us</a> </li>
+          <li class="nav-item"> <a href="#email1" class="nav-link">Contact Us</a> </li>
         </ul>
       </div>
     </div>
@@ -77,7 +77,7 @@
       </div>
     </div>
 <br>
-    <div class=" row pizza-r">
+    <div class=" row pizza-r" id="menu">
       <div class="col-md-4 piza">
         <div class="pizza1 pizza1-pic">
 
@@ -126,14 +126,14 @@
             <label for='peperoni'>Peperoni</label>
             <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham'>
+            <input type='checkbox' name='topping' value='ham' id='ham' >
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust-l' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
-            <input type='radio' name='crust' value='stuffed' id='crust'>
+            <input type='radio' name='crust-l' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
-            <input type='radio' name='crust' value='gluten-free' id='crust'><br>
+            <input type='radio' name='crust-l' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
             <input type='number' class='form-control' id='quantity'><br>
             <button class='btn btn-primary btn-l' type='submit'>Add To Cart</button>
@@ -154,7 +154,7 @@
             <input type='checkbox' name='topping' value='ham' id='ham-m'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
             <input type='radio' name='crust' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
@@ -179,7 +179,7 @@
             <input type='checkbox' name='topping' value='ham' id='ham'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
             <input type='radio' name='crust' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
@@ -208,9 +208,9 @@
             <input type='checkbox' name='topping' value='ham' id='ham-L'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
-            <input type='radio' name='crust' value='stuffed' id='crust'>
+            <input type='radio' name='crust' value='stuffed' id='crust' >
             <label for='crust'>Gluten-free</label>
             <input type='radio' name='crust' value='gluten-free' id='crust'><br>
             <label for='quantity'>Quantinty</label>
@@ -233,7 +233,7 @@
             <input type='checkbox' name='topping' value='ham' id='ham-M'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
             <input type='radio' name='crust' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
@@ -258,7 +258,7 @@
             <input type='checkbox' name='topping' value='ham' id='ham'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust' value='crispy' id='crust'>
+            <input type='radio' name='crust' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
             <input type='radio' name='crust' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
@@ -284,10 +284,10 @@
             <label for='peperoni'>Peperoni</label>
             <input type='checkbox' name='topping' value='peperoni' id='peperoni-La'>
             <label for='ham'>Ham</label>
-            <input type='checkbox' name='topping' value='ham' id='ham-La'>
+            <input type='checkbox' name='topping' value='ham' id='ham-La' >
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust-La' value='crispy' id='crust'>
+            <input type='radio' name='crust-La' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
             <input type='radio' name='crust-La' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
@@ -312,7 +312,7 @@
             <input type='checkbox' name='topping' value='ham' id='ham-Me'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust-Me' value='crispy' id='crust'>
+            <input type='radio' name='crust-Me' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
             <input type='radio' name='crust-Me' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
@@ -337,7 +337,7 @@
             <input type='checkbox' name='topping' value='ham' id='ham-Sm'>
             <h6>Crust Type</h6>
             <label for='crust'>Crispy</label>
-            <input type='radio' name='crust-Sm' value='crispy' id='crust'>
+            <input type='radio' name='crust-Sm' value='crispy' id='crust' checked>
             <label for='crust'>Stuffed</label>
             <input type='radio' name='crust-Sm' value='stuffed' id='crust'>
             <label for='crust'>Gluten-free</label>
@@ -400,7 +400,8 @@
           </tr>
         </tfoot>
       </table>
-      <button type="button" name="button">Delivery</button>
+      <button type="button" name="button" class="btn btn-primary" id="delivery" >Delivery</button>
+      <button type="button" name="button" class="btn btn-success" id="checkout" >Checkout</button>
     </div>
     </div>
     </div>
@@ -408,6 +409,36 @@
   </div>
   <br><br><br>
   <span class="shopping-cart"><img src="shopping-cart-icon.png" alt="" width="20px;"> <span class="items-added"> <small>1</small> </span> </span>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 offset-md-2 email" id="email1">
+          <h5>Email Us</h5>
+          <form class="targetEmail" action="index.html" method="post">
+              <div class="form-group">
+                <input class="form-control" type="text" name="" value="" id="names" placeholder="Your Names" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" name="" value="" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <textarea name="name" rows="8" cols="33" id="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" name="button">Send Email</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+            <h5>Location</h5>
+            <h6>Stores: Somoev, loinks</h6>
+            <h6>Email: mittosteve@gmail.com</h6>
+            <h6>contact : +254712345690</h6>
+            <h6>Addres: There</h6>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+  <small class="text-success ">Made with Love by Moringa prep student</small>
+  </div>
 </body>
 
 </html>

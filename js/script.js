@@ -72,9 +72,8 @@ $(".shopping-cart").click(function(){
     event.preventDefault();
 
 
-    if ($("#crust").prop("checked") == false) {
-      alert("Select a crust type")
-    } else if ($("#quantity").val() == "") {
+
+    if ($("#quantity").val() == "") {
       alert("Select amount of Large pizzas");
     } else {
       var pizza = pizzaTypes[0];
@@ -456,7 +455,7 @@ $(".shopping-cart").click(function(){
         }else if ($(".quantity-La").val() == "") {
             alert("Select amount of Large pizzas");
           } else {
-            var pizza = pizzaTypes[3];
+            var pizza = pizzaTypes[2];
             var cheeseTop = $("#cheese-La");
             var peperoniTop = $("#peperoni-La");
             var hamTop = $("#ham-La")
@@ -516,7 +515,7 @@ $(".shopping-cart").click(function(){
             alert("Select amount of Medium pizzas");
           } else {
             var quantity= (parseInt($(".amount3").val()))
-            var pizza = pizzaTypes[3];
+            var pizza = pizzaTypes[2];
             var cheeseTop = $("#cheese-Me");
             var peperoniTop = $("#peperoni-Me");
             var hamTop = $("#ham-Me")
@@ -579,7 +578,7 @@ $(".shopping-cart").click(function(){
             var quantity = parseInt($(".amt3").val());
             console.log(quantity)
             pizzaAmount += quantity;
-            var pizza = pizzaTypes[3];
+            var pizza = pizzaTypes[2];
             var cheeseTop = $("#cheese-Sm");
             var peperoniTop = $("#peperoni-Sm");
             var hamTop = $("#ham-Sm")
@@ -633,7 +632,25 @@ $(".shopping-cart").click(function(){
 
         })
 
+$("#delivery").click(function(){
+  var location = prompt("Enter your Location");
+   if(location == ""){
+     $("#delivery").hide()
+   }else{
+     alert("Thank you. Pizzas will be delivered to "+ location +"delivery Is Free")
+     $("#delivery").hide()
+   }
 
+})
+$("#checkout").click(function(){
+  alert("Thank you")
+   location.reload();
+})
+$(".targetEmail").submit(function(){
+  event.preventDefault();
+  alert("Thank you "+ $("#names").val()+". Email sent")
+  
+})
 
   // var lastPrice =0;
   // finalPrice.forEach((price) => lastPrice += price);

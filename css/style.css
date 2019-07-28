@@ -15,6 +15,9 @@
   justify-content: flex-end;
   align-items: center;
   height: 680px;
+  background-image: url('images/bg-top.png');
+  background-position:center;
+  background-size:cover;
 }
 
 .top-img .top-items {
@@ -34,11 +37,15 @@
   font-style: italic;
   margin: 20px 0;
 }
+#my-chef{
+  text-align: center;
+
+}
 
 .chef {
   /* background: rgba(0, 0, 0, 0.5); */
   padding: 20px;
-  height: auto;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -49,47 +56,67 @@
 }
 
 .chef .chefs-quote {
-  width: 400px;
+  width:90vw;
 }
 
-.chef .chef-quote p {
-  max-width: 10px;
+.chef .chefs-quote p {
+  max-width: 500px;
 }
+.chef .chefs-quote small {
+  margin: 0 10px;
+}
+.chef .chefs-quote p::before{
+  content :'"';
+  font-size: 3em;
+  position: relative;
+  top:0;
+  left:0;
 
+}
 .chef .chef-img {
   display: flex;
   justify-content: space-around;
   width: auto;
 }
-
-.chef .chef-img .details {
-  width: auto;
-}
-
 .chef .chef-img2 {
   margin-right: 20px;
-  height: 200px;
-  width: 200px;
-  background: #487eb0;
+  height: 250px;
+  width: 250px;
+  background-image:url('images/chef.webp');
+  background-position: center;
+  background-size: cover;
+  background-origin: padding-box;
   border-radius: 50%;
+  border:4px solid black;
 }
-
+.pizza-heading{
+  text-align: center;
+}
 .pizza1 {
-  height: 240px;
+  height: 300px;
   width: 200px;
-  background-color: #487eb0;
+  /* background-color: #487eb0; */
 }
 
 .pizza-1-txt {
-  width: 240px;
+  width: 100px;
   height: 240px;
   max-height: 240px;
+  min-width: 200px;
   padding: 0px 10px;
+}
+.pizza-1-txt p{
+  min-width: 104px;
+  text-align: justify;
 }
 
 .pizza-types1 {
-  background-color: rgba(0, 0, 0, .02);
+  background-image: url('images/blur-bg.png');
+  background-position:center;
+  background-size:cover;
   text-align: center;
+  background-attachment: fixed;
+
   /* display: none; */
 }
 
@@ -104,13 +131,36 @@
   text-align: center;
   /* display: none; */
 }
+.pizza1-pic{
+  background-image: url('images/new/Margherita Pizza.jpg');
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  text-align: center;
+  min-width:198px;
 
+}.pizza2-pic{
+  background-image: url('images/new/pic5.jpg');
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  text-align: center;
+  min-width:198px;
+
+}.pizza3-pic{
+  background-image: url('images/new/Chicago-Style-Thin-Crust-Pizza-1200-1633.jpg');
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  text-align: center;
+  min-width:198px;
+
+}
 .piza {
   display: flex;
 }
-
 .size1 {
-  width: 100px
+  width: 100px;
 }
 
 .size2 {
@@ -170,6 +220,7 @@ input {
   background-color:red;
   border: .5px solid red;
   border-radius: 50%;
+  overflow: scroll;
 }
 .cart  h3{
   color: white;
@@ -189,6 +240,7 @@ input {
   border:3px solid black;
   border-radius: 50%;
   cursor: pointer;
+
 }
 .shopping-cart .items-added{
   position: absolute;
@@ -204,5 +256,9 @@ input {
   border:.9px solid black;
   border-radius: 50%;
   color: white;
-
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+.col-md-4{
+  margin: 20px 0;
+}
 }
