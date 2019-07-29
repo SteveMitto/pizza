@@ -18,24 +18,32 @@
   <div class="container-fluid top-nav">
     <div id="home"class="row ">
       <div class="col-md-4">
-        <ul class="nav">
+        <ul class="nav nav1">
           <li class="nav-item"> <a href="#home" class="nav-link">Home</a> </li>
           <li class="nav-item"> <a href="#menu" class="nav-link">Menu</a> </li>
           <!-- <li class="nav-item"> <a href="#" class="nav-link"></a> </li> -->
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 heading">
         <br>
         <h6>Pizza Moto</h6>
       </div>
       <div class="col-md-4">
-        <ul class="nav">
+        <ul class="nav nav1">
           <!-- <li class="nav-item"> <a href="#" class="nav-link">Delivery</a> </li> -->
           <li class="nav-item"> <a href="#my-chef" class="nav-link">About Us</a> </li>
           <li class="nav-item"> <a href="#email1" class="nav-link">Contact Us</a> </li>
         </ul>
       </div>
-    </div>
+      <!-- <div class=" container-fluid nav2">
+        <ul class="nav">
+          <li class="nav-item"> <a href="#home" class="nav-link">Home</a> </li>
+          <li class="nav-item"> <a href="#menu" class="nav-link">Menu</a> </li>
+
+        </ul>
+    </div> -->
+  </div>
+
   </div>
   <div class="container-fluid top-img">
     <div class="top-items ">
@@ -85,7 +93,7 @@
         <div class="pizza-1-txt">
           <h4>Margherita Pizza</h4>
           <p>Pizza Margherita is a typical Neapolitan pizza, made with SanMarzano tomatoes, mozzarella cheese, fresh basil, salt and extra-virgin olive oil. </p>
-          <button type="button" id="pizza1-btn" class="btn btn-warning" name="button">Oder</button>
+          <button type="button" id="pizza1-btn" class="btn btn-warning" name="button">Order</button>
         </div>
       </div>
       <div class="col-md-4 piza">
@@ -95,7 +103,7 @@
         <div class="pizza-1-txt">
           <h4>Chicken PeriPeri</h4>
           <p>his pizza has sliced chicken breast, mozzarella cheese, and a few other complementary toppings, liberally laced with peri peri sauce. </p>
-          <button type="button" id="pizza2-btn" class="btn btn-warning" name="button">Oder</button>
+          <button type="button" id="pizza2-btn" class="btn btn-warning" name="button">Order</button>
 
         </div>
       </div>
@@ -107,7 +115,7 @@
         <div class="pizza-1-txt">
           <h4>Hawaiian</h4>
           <p>Hawaiian pizza is a pizza topped with tomato sauce, cheese, pineapple, and back bacon or ham. Pineapple as a pizza topping divides public opinion: Hawaiian was the most popular pizza in Australia</p>
-          <button type="button" id="pizza3-btn" class="btn btn-warning" name="button">Oder</button>
+          <button type="button" id="pizza3-btn" class="btn btn-warning" name="button">Order</button>
         </div>
       </div>
     </div>
@@ -395,7 +403,7 @@
         <tfoot>
           <tr><em>
             <th>Total </th>
-            <th>20</th>
+            <th id="price"></th>
             </em>
           </tr>
         </tfoot>
@@ -410,33 +418,40 @@
   <br><br><br>
   <span class="shopping-cart"><img src="shopping-cart-icon.png" alt="" width="20px;"> <span class="items-added"> <small>1</small> </span> </span>
 
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4 offset-md-2 email" id="email1">
+  <div class="container-fluid contact">
+    <div class="overlay">
+
+    <h3>Find Us</h3>
+    <div class="row email-row">
+        <div class="col-md-4 offset-md-2 email" id="email-col">
           <h5>Email Us</h5>
           <form class="targetEmail" action="index.html" method="post">
               <div class="form-group">
-                <input class="form-control" type="text" name="" value="" id="names" placeholder="Your Names" required>
+                <label for="">Your Name</label>
+                <input class="form-control" type="text" name="" value="" id="names" placeholder="Your Names" >
               </div>
               <div class="form-group">
-                <input class="form-control" type="email" name="" value="" id="email" placeholder="Your Email" required>
+                <label for="">Email</label>
+                <input class="form-control" type="email" name="" value="" id="email" placeholder="Your Email" >
               </div>
               <div class="form-group">
-                <textarea name="name" rows="8" cols="33" id="message" placeholder="Your Message" required></textarea>
+                <label for="">Your Message</label>
+                <textarea name="name" rows="4" id="message" placeholder="Your Message" ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-block" name="button">Send Email</button>
+              <button type="submit" class="btn btn-warning btn-block" name="button">Send Email</button>
           </form>
         </div>
-        <div class="col-md-4">
-            <h5>Location</h5>
-            <h6>Stores: Somoev, loinks</h6>
-            <h6>Email: mittosteve@gmail.com</h6>
-            <h6>contact : +254712345690</h6>
-            <h6>Addres: There</h6>
+        <div class="col-md-4 locate bg-warning">
+            <h5> <span> <img src="location1.png" alt="" width="20px"> </span> Location</h5>
+            <h6> <span> <img src="store.svg" alt="" width="20px"> </span>Stores: Somoev, loinks</h6>
+            <h6> <span> <img src="mail.svg" alt="" width="20px"> </span>Email: mittosteve@gmail.com</h6>
+            <h6> <span> <img src="phone.png" alt="" width="20px"> </span>contact : +254712345690</h6>
+            <h6> <span> <img src="adress.svg" alt="" width="20px"> </span>Address: There</h6>
         </div>
     </div>
   </div>
-  <div class="container-fluid">
+  </div>
+  <div class="container-fluid last">
   <small class="text-success ">Made with Love by Moringa prep student</small>
   </div>
 </body>
