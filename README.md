@@ -16,7 +16,7 @@ open with Visual Studio Code `code .`
 ## Technology Used
 To develop this site we have used HTML CSS and Jquery.
 
-##Bugs and errors
+## Bugs and errors
 The toppings may not display on cart
 and i haven't finished
 
